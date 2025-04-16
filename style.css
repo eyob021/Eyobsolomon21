@@ -173,9 +173,12 @@ nav a:hover {
   transition: transform 0.5s ease-in-out;
 }
 
+/* Default (Mobile first): show full tall image */
 .slider img {
   width: 100%;
-  flex-shrink: 0;
+  height: auto;
+  max-height: 500px; /* or however tall you want it on phones */
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -231,6 +234,12 @@ footer .social-icons a:hover {
     font-size: 14px;
     margin: 8px;
   }
+  /* On desktop, reduce the height */
+@media (min-width: 601px) {
+  .slider img {
+    max-height: 300px; /* smaller height for larger screens */
+  }
+}
 
   .about-content .text,
   .about-content .image,
