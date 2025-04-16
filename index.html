@@ -13,7 +13,7 @@
 
   <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
-<img src="images/photo1.jpg" alt="Photo">
+<!--<img src="images/photo1.jpg" alt="Photo"> -->
 
 
     <nav>
@@ -202,6 +202,29 @@
       
         window.addEventListener('load', startAutoScroll);
       </script>
+
+    <div class="mobile-menu-toggle" onclick="toggleMenu()">&#9776;</div>
+<div class="mobile-sidebar" id="mobileSidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+  <a href="#hero">Home</a>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#works">Portfolio</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<script>
+  function toggleMenu() {
+    var sidebar = document.getElementById("mobileSidebar");
+    if (sidebar.style.width === "250px") {
+      sidebar.style.width = "0";
+    } else {
+      sidebar.style.width = "250px";
+    }
+  }
+</script>
       
 </body>
 </html>
