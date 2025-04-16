@@ -1,18 +1,19 @@
-/* Global Styles */
+/* === Base Styles === */
 body {
-  background: linear-gradient(to right, #001f3f, #0074D9);
-  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #001f3f, #0074D9);
   color: #fff;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
-/* Navbar */
+/* === Navbar === */
 nav {
   background-color: #001f3f;
   padding: 15px;
@@ -24,25 +25,25 @@ nav {
 
 nav a {
   color: white;
-  margin: 0 15px;
+  margin: 0 10px;
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
-  text-transform: uppercase;
+  display: inline-block;
 }
 
 nav a:hover {
   color: #00cfff;
 }
 
-/* Hero Section */
+/* === Hero === */
 #hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 80px 20px;
 }
 
 #hero h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   margin-bottom: 20px;
 }
 
@@ -50,7 +51,7 @@ nav a:hover {
   font-size: 1.2rem;
 }
 
-/* About Section */
+/* === About Section === */
 #about {
   background-color: #fff;
   color: #333;
@@ -61,19 +62,15 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 30px;
-  align-items: center;
+  gap: 20px;
   max-width: 1200px;
   margin: auto;
+  align-items: center;
 }
 
 .about-content .text,
 .about-content .image {
   flex: 1 1 45%;
-}
-
-.about-content .image img {
-  border-radius: 10px;
 }
 
 .text h2 {
@@ -86,7 +83,7 @@ nav a:hover {
   line-height: 1.6;
 }
 
-/* Education Section */
+/* === Education === */
 #education {
   background-color: #f9f9f9;
   color: #333;
@@ -108,11 +105,11 @@ nav a:hover {
   color: #333;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   flex: 1 1 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Skills */
+/* === Skills === */
 #skills {
   background-color: #0074D9;
   color: white;
@@ -130,7 +127,7 @@ nav a:hover {
   font-size: 1.1rem;
 }
 
-/* Experience Section */
+/* === Experience === */
 #experience {
   background-color: #f9f9f9;
   color: #333;
@@ -153,10 +150,10 @@ nav a:hover {
   padding: 20px;
   border-radius: 10px;
   flex: 1 1 45%;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Works (Slider) Section */
+/* === Works (Slider) === */
 #works {
   background-color: #fff;
   color: #333;
@@ -202,7 +199,7 @@ nav a:hover {
   right: 10px;
 }
 
-/* Contact */
+/* === Contact === */
 #contact {
   background-color: #001f3f;
   color: white;
@@ -210,7 +207,7 @@ nav a:hover {
   text-align: center;
 }
 
-/* Footer */
+/* === Footer === */
 footer {
   background-color: #001f3f;
   text-align: center;
@@ -228,7 +225,7 @@ footer .social-icons a:hover {
   color: #00cfff;
 }
 
-/* Responsive Fixes */
+/* === Mobile Responsive Fixes === */
 @media (max-width: 600px) {
   nav a {
     font-size: 14px;
@@ -244,5 +241,21 @@ footer .social-icons a:hover {
 
   .slider img {
     width: 90vw;
+  }
+
+  .about-content {
+    gap: 40px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.95rem;
   }
 }
