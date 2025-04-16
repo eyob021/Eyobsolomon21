@@ -266,3 +266,49 @@ footer .social-icons a:hover {
     font-size: 0.95rem;
   }
 }
+
+.mobile-menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background: #001f3f;
+  color: white;
+}
+
+.mobile-sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  background-color: #001f3f;
+  overflow-x: hidden;
+  transition: 0.4s;
+  padding-top: 60px;
+}
+
+.mobile-sidebar a {
+  display: block;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+
+.mobile-sidebar .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 36px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .mobile-menu-toggle {
+    display: block;
+  }
+}
