@@ -11,4 +11,5 @@ function moveSlide(step) {
   slidePos = Math.max(0, Math.min(slidePos, maxScroll));
 
   slider.style.transform = `translateX(-${slidePos}px)`;
+  sidebar.style.width="220px";
 }
