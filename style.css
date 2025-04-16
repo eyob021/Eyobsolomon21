@@ -289,6 +289,7 @@ footer .social-icons a:hover {
 
 .mobile-sidebar {
   height: 100%;
+  max-width:220px;
   width: 0;
   position: fixed;
   z-index: 1001;
