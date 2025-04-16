@@ -1,9 +1,14 @@
-let slideIndex = 0;
+let slidePos = 0;
 
 function moveSlide(step) {
-    const slides = document.querySelectorAll('.slider img');
-    slideIndex = (slideIndex + step + slides.length) % slides.length;
-    const offset = -slideIndex * 100;
-    document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
+  const slider = document.querySelector('.slider');
+  const images = document.querySelectorAll('.slider img');
+  const slideWidth = images[0].offsetWidth;
+  slidePos += step * slideWidth;
+
+  // limit scrolling
+  const maxScroll = (images.length - 1) * slideWidth;
+  slidePos = Math.max(0, Math.min(slidePos, maxScroll));
+
+  slider.style.transform = `translateX(-${slidePos}px)`;
 }
- 
