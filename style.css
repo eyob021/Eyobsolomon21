@@ -9,6 +9,9 @@ body {
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
 }
+h2{
+  font-size:28px;
+}
 html {
   scroll-behavior: smooth;
 }
